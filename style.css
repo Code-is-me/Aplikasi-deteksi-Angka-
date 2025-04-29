@@ -1,0 +1,206 @@
+.main,
+.stApp {
+  background-color: rgba(255, 250, 223, 1);
+  z-index: 1;
+}
+.st-emotion-cache-t1wise {
+  padding: 0rem 6rem 3rem !important;
+}
+.center {
+  text-align: center;
+}
+.centered-frame {
+  display: flex;
+  justify-content: center;
+}
+.image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 8px;
+}
+.image-container img {
+  width: 360px; /* Atur ukuran sesuai keinginan */
+}
+.subtitle {
+  text-align: center;
+  font-size: 40px !important;
+  color: #333;
+  font-family: "Montserrat", sans-serif !important;
+}
+.desc {
+  font-size: 20px !important;
+  font-family: "Montserrat", sans-serif !important;
+  padding: 2rem 0rem;
+}
+.frame-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 3rem;
+  margin-top: 60px;
+  width: 100%;
+}
+.frame-feature {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px 36px;
+  border-radius: 30px;
+  font-size: 18px;
+  width: 400px;
+}
+.frame-feature p {
+  font-weight: bold;
+  margin: 0;
+}
+.elipse-background {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  transform: translateY(27%);
+  height: auto;
+  width: 100%;
+  max-width: none;
+  padding: 0;
+  z-index: -1;
+  pointer-events: none;
+}
+.elipse-background img {
+  width: 100%;
+  max-width: none;
+}
+.mult-background {
+  position: fixed;
+  height: auto;
+  width: 100%;
+  top: 6%;
+  left: 90%;
+  z-index: -1;
+  pointer-events: none;
+}
+.plus-background {
+  position: fixed;
+  height: auto;
+  width: 100%;
+  top: 4%;
+  left: 4%;
+  z-index: -1;
+  pointer-events: none;
+}
+.div-background {
+  position: fixed;
+  height: auto;
+  width: 100%;
+  top: 54%;
+  left: 7%;
+  z-index: -1;
+  pointer-events: none;
+}
+.minus-background {
+  position: fixed;
+  height: auto;
+  width: 100%;
+  top: 50%;
+  left: 83%;
+  z-index: -1;
+  pointer-events: none;
+}
+.bubble-background {
+  position: fixed;
+  height: auto;
+  width: 100%;
+  top: 30%;
+  left: 87%;
+  z-index: -1;
+  pointer-events: none;
+}
+.bubble2-background {
+  position: fixed;
+  height: auto;
+  width: 100%;
+  top: 28%;
+  left: 6%;
+  z-index: -1;
+  pointer-events: none;
+}
+.bubble3-background {
+  position: fixed;
+  height: auto;
+  width: 100%;
+  top: 32%;
+  left: 25%;
+  z-index: -1;
+  pointer-events: none;
+}
+.bubble4-background {
+  position: fixed;
+  height: auto;
+  width: 100%;
+  top: 35%;
+  left: 75%;
+  z-index: -1;
+  pointer-events: none;
+}
+.bubble5-background {
+  position: fixed;
+  height: auto;
+  width: 100%;
+  top: 39%;
+  left: 16%;
+  z-index: -1;
+  pointer-events: none;
+}
+.bubble6-background {
+  position: fixed;
+  height: auto;
+  width: 100%;
+  top: 23%;
+  left: 72%;
+  z-index: -1;
+  pointer-events: none;
+}
+.m-0 {
+  margin-top: -36px !important;
+}
+.p-1 {
+  padding: 1rem 0rem;
+}
+.pink {
+  background-color: #fce4ec;
+}
+.kuning {
+  background-color: #ebe5c2;
+}
+.teal {
+  background-color: #ebf2ff;
+}
+.stVerticalBlock {
+  gap: 0px !important;
+}
+.stButton {
+  text-align: center;
+  margin-top: 30px;
+}
+.stButton button[kind="primary"] {
+  background-color: #ff6b6b;
+  color: white;
+  font-weight: bold;
+  padding: 10px 40px;
+  border-radius: 10px;
+  font-size: 18px;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.15);
+}
+.stButton button[kind="primary"]:hover {
+  background-color: #e65c50;
+  transform: scale(1.05);
+}
+.stButton button[kind="secondary"] {
+  text-align: left !important;
+}
+.stHorizontalBlock {
+  margin-top: 3.5rem;
+}
