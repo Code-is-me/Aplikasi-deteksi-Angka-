@@ -9,8 +9,8 @@ import re
 # Set page config
 st.set_page_config(page_title="EDUMATH", layout="wide", initial_sidebar_state="collapsed") 
 
-with open("style.css") as f:
-    st.markdown(f"<style>{f.read()}</style>", unsafe_allow_html=True)
+# with open("style.css") as f:
+#     st.markdown(f"<style>{f.read()}</style>", unsafe_allow_html=True)
 
 st.markdown("""
     <style>
@@ -124,7 +124,7 @@ def clean_prediction(predicted_text):
     return cleaned
 
 # ========================== Streamlit UI ==========================
-col1, col2, col3 = st.columns([1, 8, 1])
+col1, col2, col3 = st.columns([1, 3, 1])
 with col1:
     back_button = st.button("Kembali", type="secondary")
 

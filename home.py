@@ -60,7 +60,7 @@ st.markdown(
 st.markdown('<p class="center desc" style="margin-bottom: 30px;">Ambil langkah untuk menghitung operasi dasar matematika dengan cara yang inovatif.<br>Yuk, coba sekarang!</p>', unsafe_allow_html=True)
 
 if st.button("Mulai Menghitung", key="start_button", type="primary"):
-    st.switch_page("pages/predict.py")
+    st.switch_page("pages/predict4.py")
 
 st.markdown(
     f"""
@@ -98,6 +98,7 @@ st.markdown(
     """,
     unsafe_allow_html=True
 )
+
 st.markdown(
     f"""
     <div class="plus-background" style="gap: 0rem !important;">

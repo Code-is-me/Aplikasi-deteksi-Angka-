@@ -63,14 +63,14 @@ model.compile(optimizer='adam', loss='categorical_crossentropy', metrics=['accur
 history = model.fit(X_train, y_train, validation_data=(X_val, y_val), epochs=20, batch_size=32)
 
 # Menyimpan model
-model.save('../models/char_model.keras')
-print("Model disimpan di 'models/char_model.keras'")
+model.save('../models/char_model.h5')
+print("Model disimpan di 'models/char_model.h5'")
 
 # Membuat grafik akurasi model
 plt.plot(history.history['accuracy'], 'b--', label='accuracy')
 plt.plot(history.history['val_accuracy'], 'y-.', label='(val_accuracy')
 plt.title('model accuracy')
 plt.xlabel('epoch')
-plt.ylabel('accuracy')
+plt.ylabel('accuracy character')
 plt.legend()
 plt.show()

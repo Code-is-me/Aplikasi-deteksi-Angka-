@@ -61,12 +61,21 @@ model.compile(optimizer='adam', loss='categorical_crossentropy', metrics=['accur
 
 history = model.fit(train_images, train_labels, epochs=10, validation_data=(test_images, test_labels), batch_size=64)
 
-model.save('../models/number_model.keras')
+model.save('../models/number_model.h5')
 
-print("Model disimpan di 'models/number_model.keras'")
+print("Model disimpan di 'models/number_model.h5'")
 
 images = load_mnist_images('../data/number/t10k-images.idx3-ubyte')
 labels = load_mnist_labels('../data/number/t10k-labels.idx1-ubyte')
 
 show_images(images, labels, sample_size=5)
+
+# Membuat grafik akurasi model
+plt.plot(history.history['accuracy'], 'b--', label='accuracy')
+plt.plot(history.history['val_accuracy'], 'y-.', label='(val_accuracy')
+plt.title('model accuracy')
+plt.xlabel('epoch')
+plt.ylabel('accuracy number')
+plt.legend()
+plt.show()
 

@@ -1,4 +1,59 @@
 .main,
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(10deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+@keyframes spin-360 {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(100deg);
+  }
+}
+@keyframes float {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+@keyframes float-horizontal {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(20px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+@keyframes rounded {
+  50% {
+    transform: translatey(50deg);
+  }
+}
+
 .stApp {
   background-color: rgba(255, 250, 223, 1);
   z-index: 1;
@@ -20,7 +75,7 @@
   margin-top: 8px;
 }
 .image-container img {
-  width: 360px; /* Atur ukuran sesuai keinginan */
+  width: 360px;
 }
 .subtitle {
   text-align: center;
@@ -79,6 +134,9 @@
   z-index: -1;
   pointer-events: none;
 }
+.mult-background img {
+  animation: float 10s linear infinite;
+}
 .plus-background {
   position: fixed;
   height: auto;
@@ -87,6 +145,9 @@
   left: 4%;
   z-index: -1;
   pointer-events: none;
+}
+.plus-background img {
+  animation: spin 6s linear infinite;
 }
 .div-background {
   position: fixed;
@@ -97,6 +158,9 @@
   z-index: -1;
   pointer-events: none;
 }
+.div-background img {
+  animation: float 5s linear infinite;
+}
 .minus-background {
   position: fixed;
   height: auto;
@@ -105,6 +169,9 @@
   left: 83%;
   z-index: -1;
   pointer-events: none;
+}
+.minus-background img {
+  animation: spin 6s linear infinite;
 }
 .bubble-background {
   position: fixed;
@@ -115,6 +182,9 @@
   z-index: -1;
   pointer-events: none;
 }
+.bubble-background img {
+  animation: spin-360 20s linear infinite;
+}
 .bubble2-background {
   position: fixed;
   height: auto;
@@ -124,6 +194,9 @@
   z-index: -1;
   pointer-events: none;
 }
+/* .bubble2-background img {
+  animation: float 6s linear infinite;
+} */
 .bubble3-background {
   position: fixed;
   height: auto;
@@ -132,6 +205,9 @@
   left: 25%;
   z-index: -1;
   pointer-events: none;
+}
+.bubble3-background img {
+  animation: float 12s linear infinite;
 }
 .bubble4-background {
   position: fixed;
@@ -142,6 +218,9 @@
   z-index: -1;
   pointer-events: none;
 }
+.bubble4-background img {
+  animation: float-horizontal 12s linear infinite;
+}
 .bubble5-background {
   position: fixed;
   height: auto;
@@ -150,6 +229,9 @@
   left: 16%;
   z-index: -1;
   pointer-events: none;
+}
+.bubble5-background img {
+  animation: float 6s linear infinite;
 }
 .bubble6-background {
   position: fixed;
@@ -160,6 +242,28 @@
   z-index: -1;
   pointer-events: none;
 }
+
+.background-count {
+  position: fixed;
+  height: 100vh;
+  width: 100vw;
+  z-index: -1;
+  pointer-events: none;
+}
+
+.bubble6-background img {
+  animation: float 18s linear infinite;
+}
+
+.card-container {
+  background-color: white;
+  border: 1px solid #d9d9d9;
+  border-radius: 16px;
+  padding: 28px 40px;
+  margin-top: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
 .m-0 {
   margin-top: -36px !important;
 }
